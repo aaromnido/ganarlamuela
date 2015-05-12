@@ -148,6 +148,9 @@ a.collection-item{
 
 .news-section{
     padding: 4rem 0;
+}
+.news-section, .articles{
+    padding: 4rem 0;
     strong{
         font-weight: 700;
     }
@@ -158,6 +161,7 @@ a.collection-item{
         list-style: disc;
     }
 }
+
 .secondary-page{
     margin-bottom: 8rem;
 
