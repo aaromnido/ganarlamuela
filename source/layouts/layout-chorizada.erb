@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <%= partial "chorizada/head" %>
+
+  <body class=" chorizada <%= page_classes %>">
+    <div class="wrapper">
+
+        <main class="content">
+          <%= yield %>
+        </main><!-- content -->
+
+        <%= partial "chorizada/footer" %>
+
+    </div><!-- wrapper -->
+  </body>
+</html>
