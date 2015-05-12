@@ -148,6 +148,15 @@ a.collection-item{
 
 .news-section{
     padding: 4rem 0;
+    strong{
+        font-weight: 700;
+    }
+    ul{
+        padding-left: 2rem;
+    }
+    li{
+        list-style: disc;
+    }
 }
 .secondary-page{
     margin-bottom: 8rem;
