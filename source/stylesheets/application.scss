@@ -66,6 +66,7 @@ a.collection-item{
             color: $grey;
             text-transform: capitalize;
             transition: background 0.4s;
+            margin-left: 0.45rem;
             &:hover{
                 background: $red;
                 color: white;
@@ -77,6 +78,9 @@ a.collection-item{
             }
             &.facebook{
                 background: url(../images/icon-24-facebook.png) center no-repeat;
+            }
+            &.twitter{
+                background: url(../images/icon-24-twitter.png) center no-repeat;
             }
         }
     }
@@ -116,10 +120,14 @@ a.collection-item{
             width: 24px;
             height: 24px;
             opacity: 0.6;
+            margin-left: 1rem;
             &:hover{
                 transition: opacity 0.4s;
                 opacity: 0.8;
             }
+        }
+        a.twitter{
+            background: url(../images/icon-24-twitter.png) center no-repeat;
         }
     }
 }
