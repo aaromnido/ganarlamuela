@@ -1,4 +1,213 @@
-$red: red
+// Colours
+$black: #263238
+$grey: #607d8b
+$red: #BD0926
+$white: white
 
-body
-    color: $red
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800)
+
+// Layout
+html
+    font-family: "Open Sans", sans-serif !important
+
+p, h1, h2, h3, h4, h5, h6, strong, small, em, li, ol
+    color: $black
+
+p
+    font-size: 1.1rem
+    line-height: 1.8rem
+    strong
+        font-weight: 700
+
+.tm
+    font-size: 1em
+    font-weight: 300
+
+// SECTIONS .section-...
+[class^="section-"]
+    padding: 4rem 0
+    text-align: center
+    h2
+        $size: 2.8rem
+        font-size: $size
+        line-height: $size * 1.2
+        font-weight: 400
+        margin-bottom: 2rem
+    h5
+        $size: 1.5rem
+        font-size: $size
+        line-height: $size * 1.4
+        font-weight: 300
+        margin-bottom: 0.8rem
+        strong
+            font-weight: 600
+
+    .picture
+        margin: 4rem 0 1rem
+
+
+.section-header
+    padding: 0
+    background: darken($red, 22%) url(../images/parrillada.jpg) center no-repeat
+    background-size:  cover
+
+    .header
+        .logo
+            margin-top: 2rem
+            opacity: 0.8
+            transition: opacity 0.4s
+            &:hover
+                opacity: 1
+
+            img
+                width: 135px
+                height: 43px
+
+    .main
+        text-align: center
+        color: $white
+        text-transform: uppercase
+        height: 560px
+        margin-bottom: 40px
+        @media only screen and (max-width: 515px)
+            height: 400px
+
+        h1
+            font-size: 4rem
+            font-weight: 700
+            border: 8px solid $white
+            padding: 1rem 1.8rem
+            display: inline-block
+            margin-bottom: 0
+            text-shadow: 0 10px 100px $red
+            color: $white
+            @media only screen and (max-width: 515px)
+                font-size: 2.7rem
+                line-height: 3rem
+
+        h4
+            font-weight: 500
+            font-size: 2rem
+            text-shadow: 0 10px 100px $red
+            color: $white
+            @media only screen and (max-width: 515px)
+                font-size: 1.5rem
+
+.section-description
+    //background: transparentize(#BA7E79, 0.9)
+    background: darken($red, 30%)
+    margin-top: -20px
+
+    h2, h5, strong, small
+        color: $white
+        text-shadow: 0 1px 1px $black
+        opacity: 0.8
+
+    h2
+        opacity: 1
+
+.section-presentation
+
+    h6
+        $size: 1.3rem
+        font-size: $size
+        line-height: $size * 1.2
+        font-weight: 300
+        text-transform: uppercase
+    p
+        $size: 1rem
+        font-size: $size
+        line-height: $size * 1.6
+
+.section-properties
+    background: #BA7E79 url(../images/saludable-fondo.jpg) bottom no-repeat
+    background-size:  contain
+    h2, h5, strong, small
+        color: $white
+        text-shadow: 0 1px 1px $black
+
+.section-testimonial
+    background: lighten(#BA7E79, 35%) url(../images/testimonial-background.png) bottom no-repeat
+    background-size:  cover
+
+.section-shop
+
+    .article
+        border-right: 1px solid lighten($grey, 40%)
+        &:last-child
+            border: none
+
+    .features
+        //text-align: left
+        min-height: 13rem
+        padding-left: 0.5rem
+
+        li
+            $size: 1rem
+            font-size: $size
+            margin-bottom: $size / 2
+            opacity: 0.7
+
+    .btn-large
+        $color: $red
+        $height: 3rem
+        background: transparent
+        border: 2px solid $color
+        color: $color
+        border-radius: 100px
+        box-shadow: none
+        height: $height
+        line-height: ($height * 0.9)
+        font-weight: 600
+        font-size: 0.9rem
+        &:hover
+            background: $color
+            color: $white
+            box-shadow: none
+
+    @media only screen and (max-width: 992px)
+        .article
+            border-right: none
+            border-bottom: 1px solid lighten($grey, 40%)
+            padding: 5rem 0 !important
+
+            li
+                $size: 1.4rem
+                font-size: $size
+                margin-bottom: $size / 2
+
+            .btn-large
+                $height: 4rem
+                font-size: 1.2rem
+                height: $height
+                line-height: ($height * 0.9)
+
+    @media only screen and (min-width: 993px)
+        .features
+            text-align: left
+
+
+.section-contest
+    background: lighten(#BA7E79, 35%) url(../images/testimonial-background.png) bottom no-repeat
+    background-size:  cover
+
+    .text
+        text-align: left
+        h5
+            text-transform: uppercase
+
+.section-footer
+    $text-opacity: 0.7
+    background: $red
+    h2, h5, strong, small, p
+        color: $white
+        opacity: $text-opacity
+    p
+        font-size: 0.8rem
+        text-align: right
+
+    .logo
+        a
+            opacity: $text-opacity
+        img
+            width: 100px
