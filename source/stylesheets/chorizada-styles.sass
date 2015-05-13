@@ -10,8 +10,10 @@ $white: white
 html
     font-family: "Open Sans", sans-serif !important
 
+
 p, h1, h2, h3, h4, h5, h6, strong, small, em, li, ol
     color: $black
+
 
 p
     font-size: 1.1rem
@@ -19,9 +21,11 @@ p
     strong
         font-weight: 700
 
+
 .tm
     font-size: 1em
     font-weight: 300
+
 
 // SECTIONS .section-...
 [class^="section-"]
@@ -98,7 +102,6 @@ p
 
 
 .section-description
-    //background: transparentize(#BA7E79, 0.9)
     background: darken($red, 30%)
     margin-top: -20px
 
@@ -110,8 +113,8 @@ p
     h2
         opacity: 1
 
-.section-presentation
 
+.section-presentation
     h6
         $size: 1.3rem
         font-size: $size
@@ -123,6 +126,7 @@ p
         font-size: $size
         line-height: $size * 1.6
 
+
 .section-properties
     background: #BA7E79 url(../images/saludable-fondo.jpg) bottom no-repeat
     background-size:  contain
@@ -133,9 +137,11 @@ p
     .picture
         width: 70%
 
+
 .section-testimonial
     background: lighten(#BA7E79, 35%) url(../images/testimonial-background.png) bottom no-repeat
     background-size:  cover
+
 
 .section-shop
 
@@ -198,10 +204,19 @@ p
     background: lighten(#BA7E79, 35%) url(../images/testimonial-background.png) bottom no-repeat
     background-size:  cover
 
+    h2
+        margin-bottom: 4rem
+
     .text
         text-align: left
+        margin-top: 6rem
+
         h5
             text-transform: uppercase
+
+    .picture
+        margin: 1.2rem 0 0 0
+
 
 .section-footer
     $text-opacity: 0.7
@@ -219,8 +234,8 @@ p
         img
             width: 100px
 
+
 @media only screen and (min-width: 320px) and (max-width: 767px)
-    body
 
     .section-header
         .main
@@ -290,12 +305,23 @@ p
         font-size: $height !important
 
     .section-contest
+        h2
+            margin-bottom: 0
+
+        .text
+            text-align: center
+            margin-top: 0
 
         h5
             font-size: 0.9rem
+
         p
             font-size: 0.7rem
             line-height: 1rem
+
+        .picture
+            margin-top: 2rem
+
 
 
 
