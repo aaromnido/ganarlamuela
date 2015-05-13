@@ -212,3 +212,91 @@ p
             opacity: $text-opacity
         img
             width: 100px
+
+@media only screen and (min-width: 320px) and (max-width: 767px)
+    body
+
+    .section-header
+        .main
+
+            h1
+                font-size: 1.8rem
+                line-height: 1.9rem
+                font-weight: 800
+                border: 5px solid $white
+
+            h4
+                font-weight: 600
+                font-size: 1.2rem
+                line-height: 1.4rem
+    [class^="section-"]
+        padding: 2rem 0
+        h2
+            $size: 1.8rem
+            font-size: $size
+            line-height: $size * 1.2
+        h5
+            $size: 1rem
+            font-size: $size
+            line-height: $size * 1.4
+
+        .picture
+            margin: 1rem 0
+
+    .section-presentation,
+    .section-shop
+        img
+            width: 60%
+            margin: 4rem 0 0
+
+    .section-testimonial
+        .picture
+            width: 40%
+            margin: 0
+
+        h5
+            $size: 0.85rem
+            font-size: $size
+            line-height: $size * 1.4
+
+    .section-shop
+
+        .article
+            margin-bottom: 3rem
+
+            .title
+                margin-top: -5rem
+
+            img
+                margin-top: 0rem
+
+        .features
+            min-height: 8rem
+
+            li
+                $size: 0.8rem
+                font-size: $size
+                line-height: $size * 1.2
+                margin-bottom: $size / 2
+
+    .btn-large
+        $height: 0.8rem
+        font-size: $height !important
+
+    .section-contest
+
+        h5
+            font-size: 0.9rem
+        p
+            font-size: 0.7rem
+            line-height: 1rem
+
+
+
+
+
+
+
+
+
+
